@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#contact span{
+    color: rgb(215, 4, 4);
+    font-weight: bold;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(135deg, #e8b228 0%, #f0c54a 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 100; */
+    height: 120px;
+}
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+.nav-links a:hover {
+    color: #ff4c24;
+}
+.login-btn {
+    background: #ff4c24;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.login-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 76, 36, 0.4);
+}
+
+@media (max-width: 700px){
+    .site-name{
+        font-size: 22px; 
+        }
+    .back-btn{ 
+        padding: 7px 10px; 
+    }
+    .back-btn .text{ 
+        display: none; 
+    }
+}
+@media (min-width: 700px) and (max-width:1100px){
+    .site-name{ 
+        font-size: 22px; 
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/premium-photo/variety-fast-food-items-arranged-table-including-burgers-fries-pizza-soda-colorful-collage-various-fast-food-items-such-as-burgers-fries-soda_538213-73579.jpg);
+    background-image: url(https://images.unsplash.com/photo-1543353071-10c8ba85a904?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000);
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.auth-container{
+    margin-top: 200px;
+}
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-info, .contact-form {
+    flex: 1 1 45%;
+    background-color: #c0bebe;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);  
+}
+.contact-info:hover{
+    background: white;
+}
+.contact-form:hover{
+    background: white;
+}
+h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+.contact-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+.contact-info p span {
+    font-weight: bold;
+    color: #f34a4a;
+}
+.contact-info:hover{
+    .contact-info p span:hover{
+    color: #ccc;
+    }
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+textarea {
+    resize: none;
+    height: 120px;
+}
+button {
+    background: #ff5c5c;
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+button:hover {
+    background: #e34646;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px){
+    .contact-info, .contact-form {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 1000px){
+    .nav-links a{
+        font-size: 25px;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 968px) {
+    header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* header {
+    padding: 15px 20px;
+    } */
+
+    .logo {
+    font-size: 24px;
+    }
+
+    .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #e8b228 0%, #f0c54a 100%);
+    } 
+
+    .nav-links a {
+    font-size: 20px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .hero-content h1 {
+    font-size: 32px;
+    }
+
+    .hero-content p {
+    font-size: 16px;
+    }
+
+    .features {
+    padding: 50px 20px;
+    }
+
+    .food-section {
+    padding: 50px 20px;
+    }
+
+    .section-title {
+    font-size: 2rem;
+    }
+
+    .footer {
+    padding: 40px 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+    padding: 25px;
+    }
+
+    .hero-content h1 {
+    font-size: 24px;
+    }
+
+    .order-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    }
+}
+@media (max-width:1000px){
+    .nav-links{
+        gap: -10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .login-btn{
+        margin-bottom: 40px;
+    }
+
+}
+
