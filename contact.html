@@ -3,48 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Food Delivery</title>
+    <title>Contact Us - Prime Platter</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <!-- header -->
   <header>
-    <div class="logo">Prime Platter</div>
+    <div class="logo">
+      <span class="logo-icon">🍽️</span>
+      <span class="logo-text">Prime<span class="highlight">Platter</span></span>
+    </div>
     <nav>
-      <ul class="nav-links" id="navLinks">
-        <li id="homebtn"><a href="cap2.html"><span>Home</span></a></li>
-        <li><a href="cap2.html">Features</a></li>
-        <li><a href="restaurants.html">Restaurants</a></li>
-        <li id="contact"><a href="contact.html"><span>Contact</span></a></li>
-        <li id="cart"><a href="cart.html"><span>My Cart</span></a></li>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html#features">Features</a></li>
+        <li><a href="restaurant.html">Restaurants</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="cart.html" class="cart-link">🛒 <span class="cart-badge">2</span></a></li>
       </ul>
     </nav>
-    <a href="http://127.0.0.1:3000/loginpage.html"><button class="login-btn">Login</button></a> 
+    <a href="login.html"><button class="login-btn">Login</button></a> 
   </header>
 
-    <div class="auth-container">
-        <div class="contact-container">
-        <div class="contact-info">
-            <h2>📞 Contact Information</h2>
-            <p><span>Email:</span> support@PrimePlatter.com</p>
-            <p><span>Phone:</span> +91 720xx xxxxx</p>
-            <p><span>Address:</span> Rishihood University, Sonipat, Haryana</p>
-            <p><span>Working Hours:</span> 9 AM - 11 PM (All Days)</p>
-        </div>
-
-        <div class="contact-form">
-            <h2>🍽️ Send Us a Message</h2>
-
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Your Phone" required>
-                <textarea placeholder="Your Message..." required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>Get In <span class="highlight-text">Touch</span></h1>
+      <p>We'd love to hear from you. Our team is here to help!</p>
     </div>
+  </section>
 
+  <section class="contact-main">
+    <div class="contact-container">
+      <div class="contact-form-section">
+        <div class="section-badge">Send Message</div>
+        <h2>Drop Us a Message</h2>
+        <p class="form-subtitle">Fill out the form below and we'll get back to you as soon as possible</p>
+
+        <form class="contact-form">
+          <div class="input-row">
+            <div class="input-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="input-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 98765 43210" required>
+          </div>
+
+          <div class="input-group">
+            <label>Subject</label>
+            <input type="text" placeholder="How can we help you?" required>
+          </div>
+
+          <div class="input-group">
+            <label>Message</label>
+            <textarea rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <span class="arrow">→</span>
+          </button>
+        </form>
+      </div>
+
+
+      <div class="contact-info-section">
+        <div class="section-badge">Contact Info</div>
+        <h2>Reach Out to Us</h2>
+        <p class="info-subtitle">Choose your preferred way to connect with us</p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon">📧</div>
+            <h3>Email Us</h3>
+            <p>support@primeplatter.com</p>
+            <p>info@primeplatter.com</p>
+            <a href="#" class="info-link">Send Email →</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <h3>Call Us</h3>
+            <p>+91 720xx xxxxx</p>
+            <p>Mon-Sun: 9 AM - 11 PM</p>
+            <a href="#" class="info-link">Call Now →</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h3>Visit Us</h3>
+            <p>Rishihood University</p>
+            <p>Sonipat, Haryana, India</p>
+            <a href="#" class="info-link">Get Directions →</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">💬</div>
+            <h3>Live Chat</h3>
+            <p>Available 24/7</p>
+            <p>Instant support</p>
+            <a href="#" class="info-link">Start Chat →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>🍽️ Prime Platter</h3>
+        <p>Your trusted food delivery partner</p>
+      </div>
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="cap2.html">Home</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h4>Contact</h4>
+        <p>📍 Sonipat, Haryana</p>
+        <p>📞 +91 720xx xxxxx</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Prime Platter | Designed with ❤️ by Ajay Yadav</p>
+    </div>
+  </footer>
 </body>
 </html>
