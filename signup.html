@@ -3,44 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up - Prime Platter</title>
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <header>
-        <a href="cap2.html" class="back-btn">
-            <span class="arrow">←</span>
-            <span class="text">Back to Home</span>
-        </a>
-        <div class="site-name">Prime Platter</div>
-    </header>
-
-        <div class="form-box hidden" id="signupBox">
-            <h2>Sign Up</h2>
-
-            <form>
-                <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your name" required>
+    <div class="split-container">
+        <div class="left-side">
+            <div class="branding">
+                <div class="logo-large">
+                    <span class="logo-icon">🍽️</span>
+                    <h1>Prime<span class="highlight">Platter</span></h1>
                 </div>
-
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="Enter your email" required>
+                <p class="tagline">Join thousands of happy foodies today!</p>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="icon">🎁</span>
+                        <div>
+                            <h3>Exclusive Welcome Offer</h3>
+                            <p>Get 50% OFF on your first order</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">⚡</span>
+                        <div>
+                            <h3>Quick & Easy Ordering</h3>
+                            <p>Order food in just 3 taps</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">🏆</span>
+                        <div>
+                            <h3>Rewards Program</h3>
+                            <p>Earn points on every order</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="input-group">
-                    <label>Password</label>
-                    <input type="password" placeholder="Enter your password" required>
+                <div class="stats-showcase">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Restaurants</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Happy Users</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4.8★</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
                 </div>
-
-                <button class="btn">Sign Up</button>
-
-                <p class="switch">
-                    Already have an account?
-                    <a href="loginpage.html" id="openLogin">Login</a>
-                </p>
-            </form>
+            </div>
         </div>
+
+        <div class="right-side">
+            <a href="home.html" class="back-btn">
+                <span class="arrow">←</span>
+                <span class="text">Back to Home</span>
+            </a>
+
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Create Your Account</h2>
+                    <p>Start your food journey with Prime Platter</p>
+                </div>
+
+                <form class="signup-form">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">👤</span>
+                            <input type="text" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">📧</span>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">📱</span>
+                            <input type="tel" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" placeholder="Create a strong password" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+
+                    <div class="terms-checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Create Account</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="social-signup">
+                        <button type="button" class="social-btn google">
+                            <span>🅖</span>
+                            Sign up with Google
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <span>🅵</span>
+                            Sign up with Facebook
+                        </button>
+                    </div>
+
+                    <p class="switch-form">
+                        Already have an account?
+                        <a href="login.html">Login here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
