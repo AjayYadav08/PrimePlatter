@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Top Restaurants - Prime Platter</title>
+  <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="logo-icon">🍽️</span>
+      <span class="logo-text">Prime<span class="highlight">Platter</span></span>
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html#features">Features</a></li>
+        <li id="restaurants"><a href="restaurant.html" class="active"><span>Restaurants</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-link">🛒 <span class="cart-badge">2</span></a></li>
+      </ul>
+    </nav>
+    <a href="login.html"><button class="login-btn">Login</button></a> 
+  </header>
+
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h1>Discover <span class="highlight-text">Amazing Restaurants</span></h1>
+      <p>Choose from the best restaurants in your area</p>
+      <div class="search-bar">
+        <input type="text" placeholder="🔍 Search for restaurants, cuisines...">
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="cuisine-tags">
+        <span class="tag">🍕 Italian</span>
+        <span class="tag">🍛 Indian</span>
+        <span class="tag">🍔 Fast Food</span>
+        <span class="tag">🍜 Chinese</span>
+        <span class="tag">🥗 Healthy</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="filter-section">
+      <h3>🎯 Filter By</h3>
+      <div class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">⚡ Fast Delivery</button>
+        <button class="filter-btn">⭐ Top Rated</button>
+        <button class="filter-btn">💰 Budget Friendly</button>
+        <button class="filter-btn">🎁 Offers</button>
+      </div>
+    </div>
+
+    <h2 class="section-title">🔥 Popular Near You</h2>
+
+    <div class="grid">
+      <!-- Restaurant 1 -->
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-offer">40% OFF</span>
+          <span class="badge-rating">⭐ 4.5</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza"/>
+        </div>
+        <div class="meta">
+          <div class="name">🍕 Pizza Wings</div>
+          <div class="info">Fast food · Pizza · Italian</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 25-30 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+
+      <!-- Restaurant 2 -->
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-offer">30% OFF</span>
+          <span class="badge-rating">⭐ 4.7</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Biryani"/>
+        </div>
+        <div class="meta">
+          <div class="name">🍛 The Paul's Biryani</div>
+          <div class="info">Biryani · North Indian · Mughlai</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 30-35 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+
+      <!--3-->
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-offer">25% OFF</span>
+          <span class="badge-rating">⭐ 4.3</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&q=80" alt="Chicken"/>
+        </div>
+        <div class="meta">
+          <div class="name">🍗 Sethi's Chicken Corner</div>
+          <div class="info">Grilled · Fried · Tandoori</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 20-25 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-new">NEW</span>
+          <span class="badge-rating">⭐ 4.6</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Traditional food"/>
+        </div>
+        <div class="meta">
+          <div class="name">🏛️ Haveli</div>
+          <div class="info">Traditional · Thali · Rajasthani</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 35-40 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-offer">50% OFF</span>
+          <span class="badge-rating">⭐ 4.8</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Grill"/>
+        </div>
+        <div class="meta">
+          <div class="name">🔥 The Grill Family Restaurant</div>
+          <div class="info">BBQ · Grills · North Indian</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 30-35 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+
+      <!--  6 -->
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-offer">35% OFF</span>
+          <span class="badge-rating">⭐ 4.4</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Punjabi food"/>
+        </div>
+        <div class="meta">
+          <div class="name">🥘 Punjabi Tadka</div>
+          <div class="info">Punjabi · Dhaba Style · Homely</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 25-30 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-bestseller">BESTSELLER</span>
+          <span class="badge-rating">⭐ 4.9</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80" alt="Chaap"/>
+        </div>
+        <div class="meta">
+          <div class="name">🌿 Chaap 44</div>
+          <div class="info">Soya Chaap · Kebabs · Tandoor</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 20-25 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-badges">
+          <span class="badge-offer">20% OFF</span>
+          <span class="badge-rating">⭐ 4.6</span>
+        </div>
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Cafe"/>
+
+        </div>
+        <div class="meta">
+          <div class="name">☕ 13Woods Garden Resto & Café</div>
+          <div class="info">Cafe · Continental · Coffee</div>
+          <div class="delivery-info">
+            <span class="time">⏱️ 25-30 min</span>
+          </div>
+        </div>
+        <a href="/menu.html">
+        <button class="btn">View Menu</button>
+        </a>
+      </article>
+    </div>
+
+    <div class="load-more">
+      <button class="load-more-btn">Load More Restaurants</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>🍽️ Prime Platter</h3>
+        <p>Your trusted food delivery partner</p>
+      </div>
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="cap2.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h4>Contact</h4>
+        <p>📍 Sonipat, Haryana</p>
+        <p>📞 +91 720xx xxxxx</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Prime Platter | Designed with ❤️ by Ajay Yadav</p>
+    </div>
+  </footer>
+</body>
+</html>
