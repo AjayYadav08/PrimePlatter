@@ -3,57 +3,177 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Delivery - Cart Page</title>
+    <title>My Cart - Prime Platter</title>
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <!-- header -->
   <header>
-    <div class="logo">Prime Platter</div>
+    <div class="logo">
+      <span class="logo-icon">🍽️</span>
+      <span class="logo-text">Prime<span class="highlight">Platter</span></span>
+    </div>
     <nav>
-      <ul class="nav-links" id="navLinks">
-        <li id="homebtn"><a href="cap2.html"><span>Home</span></a></li>
-        <li><a href="cap2.html">Features</a></li>
-        <li><a href="restaurants.html">Restaurants</a></li>
-        <li id="contact"><a href="contact.html"><span>Contact</span></a></li>
-        <li id="cart"><a href="cart.html"><span>My Cart</span></a></li>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html#features">Features</a></li>
+        <li><a href="restaurant.html">Restaurants</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-link active">🛒 <span class="cart-badge">2</span></a></li>
       </ul>
     </nav>
-    <a href="http://127.0.0.1:3000/loginpage.html"><button class="login-btn">Login</button></a> 
+    <a href="login.html"><button class="login-btn">Login</button></a> 
   </header>
 
+  <div class="cart-hero">
+    <h1>🛒 Your <span class="highlight-text">Cart</span></h1>
+    <p>Review your items before checkout</p>
+  </div>
 
-    <div class="container">
-        <h2>Your Cart</h2>
-        <div class="cart-item">
-            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=800&q=80" alt="Burger">
-            <div class="item-details">
-                <h3>Cheese Burger</h3>
-                <p>Juicy grilled patty with cheese and veggies.</p>
-                <div class="quantity">
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
-                </div>
-                <div class="price">₹149</div>
-            </div>
+  <div class="container">
+    <div class="cart-layout">
+      <div class="cart-items-section">
+        <div class="section-header">
+          <h2>Cart Items (2)</h2>
+          <a href="restaurant.html" class="continue-shopping">← Continue Shopping</a>
         </div>
 
         <div class="cart-item">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Pizza">
-            <div class="item-details">
-                <h3>Italian Pizza</h3>
-                <p>Loaded with cheese and fresh toppings.</p>
-                <div class="quantity">
-                    <button>-</button>
-                    <span>2</span>
-                    <button>+</button>
-                </div>
-                <div class="price">₹249</div>
+          <div class="item-image">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Burger">
+            <span class="item-badge">🔥 Popular</span>
+          </div>
+          <div class="item-details">
+            <div class="item-header">
+              <h3>Cheese Burger</h3>
+              <button class="remove-btn">🗑️</button>
             </div>
+            <p class="item-description">Juicy grilled patty with melted cheese, fresh veggies, and special sauce</p>
+            <div class="item-restaurant">🍔 From Pizza Wings</div>
+            <div class="item-footer">
+              <div class="quantity-control">
+                <button class="qty-btn">−</button>
+                <span class="qty-display">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+              <div class="item-price">
+                <span class="original-price">₹249</span>
+                <span class="discounted-price">₹149</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <button class="checkout-btn">Proceed</button>
+
+        <div class="cart-item">
+          <div class="item-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Pizza">
+            <span class="item-badge special">⭐ Bestseller</span>
+          </div>
+          <div class="item-details">
+            <div class="item-header">
+              <h3>Italian Pizza</h3>
+              <button class="remove-btn">🗑️</button>
+            </div>
+            <p class="item-description">Loaded with premium cheese, fresh toppings, and authentic Italian herbs</p>
+            <div class="item-restaurant">🍕 From Pizza Wings</div>
+            <div class="item-footer">
+              <div class="quantity-control">
+                <button class="qty-btn">−</button>
+                <span class="qty-display">2</span>
+                <button class="qty-btn">+</button>
+              </div>
+              <div class="item-price">
+                <span class="discounted-price">₹498</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="recommendations">
+          <h3>🌟 People Also Ordered</h3>
+          <div class="recommendation-grid">
+            <div class="recommendation-card">
+              <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&q=80" alt="Burger">
+              <div class="rec-info">
+                <h4>Veg Burger</h4>
+                <p>₹99</p>
+              </div>
+              <button class="add-rec-btn">+ Add</button>
+            </div>
+            <div class="recommendation-card">
+              <img src="https://images.unsplash.com/photo-1625869016774-3a92be2ae2a4?w=300&q=80" alt="Fries">
+              <div class="rec-info">
+                <h4>French Fries</h4>
+                <p>₹79</p>
+              </div>
+              <button class="add-rec-btn">+ Add</button>
+            </div>
+            <div class="recommendation-card">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300&q=80" alt="Drink">
+              <div class="rec-info">
+                <h4>Cold Drink</h4>
+                <p>₹49</p>
+              </div>
+              <button class="add-rec-btn">+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="order-summary-section">
+        <div class="summary-card">
+          <h3>📋 Order Summary</h3>
+          
+            <div class="summary-details">
+            <div class="summary-row">
+              <span>Item Total</span>
+              <span>₹647</span>
+            </div>
+            <div class="summary-row discount">
+              <span>Discount (40% OFF)</span>
+              <span>- ₹100</span>
+            </div>
+            <div class="summary-row">
+              <span>Delivery Fee</span>
+              <span class="free">FREE</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total Amount</span>
+              <span>₹579</span>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>🍽️ Prime Platter</h3>
+        <p>Your trusted food delivery partner</p>
+      </div>
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="restaurant.html">Restaurants</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h4>Contact</h4>
+        <p>📍 Sonipat, Haryana</p>
+        <p>📞 +91 720xx xxxxx</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Prime Platter | Designed with ❤️ by Ajay Yadav</p>
+    </div>
+  </footer>
 </body>
 </html>
