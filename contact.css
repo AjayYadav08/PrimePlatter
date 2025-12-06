@@ -383,13 +383,6 @@ header {
     margin-bottom: 50px;
 }
 
-.faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
-    text-align: left;
-}
-
 .faq-item {
     background: #f9f9f9;
     padding: 30px;
