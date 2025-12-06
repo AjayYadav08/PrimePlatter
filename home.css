@@ -129,24 +129,9 @@ header {
     padding: 120px 20px 50px;
     position: relative;
     overflow: hidden;
+    margin-top: 20px;
 }
 
-.main::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1), transparent),
-                radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.1), transparent);
-    animation: pulse 8s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
 
 .main-content {
     position: relative;
@@ -165,19 +150,8 @@ header {
     font-size: 14px;
     margin-bottom: 25px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    animation: slideDown 0.6s ease;
 }
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .main-content h1 {
     font-size: 64px;
@@ -327,10 +301,6 @@ header {
 }
 
 
-.feature-box:hover::before {
-    left: 0;
-    opacity: 0.05;
-}
 
 .feature-box:hover {
     transform: translateY(-10px);
@@ -378,10 +348,6 @@ header {
     gap: 60px;
 }
 
-.feature1-box.reverse {
-    flex-direction: row-reverse;
-}
-
 .feature1-img {
     flex: 1;
 }
@@ -395,10 +361,6 @@ header {
 }
 
 
-@keyframes shine {
-    0% { transform: translateX(-100%) rotate(45deg); }
-    100% { transform: translateX(100%) rotate(45deg); }
-}
 
 .image-frame:hover {
     transform: scale(1.03);
@@ -411,11 +373,9 @@ header {
     display: block;
     transition: transform 0.4s ease;
 }
-
 .feature1-text {
     flex: 1;
 }
-
 .feature-badge {
     display: inline-block;
     background: linear-gradient(135deg, #ff6b6b 0%, #ff4c24 100%);
@@ -478,16 +438,6 @@ header {
     position: relative;
 }
 
-.testimonial-card::before {
-    content: '"';
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 80px;
-    color: rgba(255, 76, 36, 0.1);
-    font-family: Georgia, serif;
-    line-height: 1;
-}
 
 .testimonial-card:hover {
     transform: translateY(-5px);
@@ -617,8 +567,7 @@ header {
         font-size: 42px;
     }
 
-    .feature1-box,
-    .feature1-box.reverse {
+    .feature1-box{
         flex-direction: column;
         text-align: center;
         gap: 40px;
@@ -639,6 +588,7 @@ header {
     }
 }
 
+
 @media (max-width: 480px) {
     .main-content h1 {
         font-size: 32px;
@@ -647,7 +597,9 @@ header {
     .main-content p {
         font-size: 16px;
     }
-
+    .main{
+        margin-top: 40px;
+    }
     .stats {
         gap: 30px;
     }
@@ -659,5 +611,10 @@ header {
     .order_b {
         padding: 14px 30px;
         font-size: 14px;
+    }
+}
+@media (max-width: 388px) {
+    .main{
+        margin-top: 150px;
     }
 }
